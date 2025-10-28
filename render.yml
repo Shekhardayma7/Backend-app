@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: backend-app
+    env: docker
+    plan: free
+    region: frankfurt
+    branch: main
+    autoDeploy: true
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_SECRET_KEY
+        sync: false
+      - key: CLOUDINARY_NAME
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: Razorpay_KEY_ID
+        sync: false
+      - key: Razorpay_KEY_SECRET
+        sync: false
