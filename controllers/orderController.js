@@ -11,7 +11,7 @@ const currency = 'INR'
 const deliveryCharge = 10
 
 const razorpayInstance = new razorpay({
-     key_id : process.env.Razorpay_Key_ID,
+     key_id : process.env.Razorpay_KEY_ID,
      key_secret: process.env.Razorpay_KEY_SECRET
 })
 
